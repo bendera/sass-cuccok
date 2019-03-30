@@ -1,5 +1,5 @@
 {
-  "name": "sass-cuccok",
+  "name": "@bendera/sass-cuccok",
   "version": "1.0.0",
   "description": "SASS stuff",
   "main": "index.scss",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bendera/sass-cuccok/issues"
   },
-  "homepage": "https://github.com/bendera/sass-cuccok#readme"
+  "homepage": "https://github.com/bendera/sass-cuccok#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
