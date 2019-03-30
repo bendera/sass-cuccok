@@ -1,0 +1,20 @@
+{
+  "name": "sass-cuccok",
+  "version": "1.0.0",
+  "description": "SASS stuff",
+  "main": "index.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendera/sass-cuccok.git"
+  },
+  "keywords": [
+    "scss",
+    "sass"
+  ],
+  "author": "Adam Bender",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendera/sass-cuccok/issues"
+  },
+  "homepage": "https://github.com/bendera/sass-cuccok#readme"
+}

@@ -1,0 +1,29 @@
+$z-layers: () !default;
+$_cached-z-index-map: ();
+
+@function z($layer-alias) {
+
+  @if (length($_cached-z-index-map) < 1) {
+    $counter: 0;
+
+    @for $i from length($z-layers) through 1 {
+      $elem: nth($z-layers, $i);
+      $key-name: '';
+
+      @if (type_of($elem)==map) {
+        $keys: map-keys($elem);
+        $counter: map-get($elem, nth($keys, 1));
+        $key-name: nth($keys, 1);
+      }
+
+      @else {
+        $counter: $counter + 1;
+        $key-name: $elem;
+      }
+
+      $_cached-z-index-map: map-merge($_cached-z-index-map, ($key-name: $counter)) !global;
+    }
+  }
+
+  @return map-get($_cached-z-index-map, $layer-alias);
+}
